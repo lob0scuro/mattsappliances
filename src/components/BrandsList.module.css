@@ -1,0 +1,22 @@
+.brandsHeader {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  text-wrap: balance;
+}
+
+.brandContainer {
+  margin-top: 2rem;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-items: center;
+  width: 90%;
+  margin-bottom: 4rem;
+}
+
+.brandImage {
+  width: 80%;
+}

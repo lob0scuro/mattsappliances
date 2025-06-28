@@ -10,6 +10,7 @@ import Landing from "./routes/Landing";
 import LakeCharlesHome from "./routes/home/LakeCharlesHome";
 import JenningsHome from "./routes/home/JenningsHome";
 import LafayetteHome from "./routes/home/LafayetteHome";
+import About from "./routes/about/About";
 
 const App = () => {
   const router = createBrowserRouter(
@@ -19,6 +20,7 @@ const App = () => {
         <Route path="lake-charles-home" element={<LakeCharlesHome />} />
         <Route path="jennings-home" element={<JenningsHome />} />
         <Route path="lafayette-home" element={<LafayetteHome />} />
+        <Route path="about" element={<About />} />
       </Route>
     )
   );

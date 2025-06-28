@@ -1,26 +1,23 @@
-.lcHomeAboutBlurbHeader {
-  text-transform: uppercase;
-  margin-bottom: 2rem;
-}
-
 .blurb {
   display: flex;
   width: 80%;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  padding-block: 4rem;
 }
 
-.lcAboutBlurb {
+.blurbTextBlock {
   margin-top: 1rem;
-  width: 60%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 .goImage {
-  width: 14rem;
+  width: 25%;
+  height: 100%;
   border-radius: 12px;
   box-shadow: -4px 4px 14px black;
 }

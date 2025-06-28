@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito+Sans:wght@400;600;700&display=swap");
+
 :root {
   --black: #2a2829;
   --blue: #3470b9;
@@ -11,29 +13,56 @@
   box-sizing: border-box;
 }
 
-body {
-  width: 100svw;
+body,
+html {
+  max-width: 100svw;
   height: 100dvh;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 18px;
 }
 
 #root {
   width: 100%;
-  height: 100%;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 header {
-  background-color: transparent;
+  background-color: var(--white);
   width: 100%;
   height: 20%;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
-  box-shadow: 0 4px 8px var(--black);
+  justify-content: space-between;
+  padding: 0 2rem;
+  box-shadow: 0 38px 22px black;
+  border-radius: 0 0 2px 2px;
+}
+
+.menu-bars {
+  font-size: 2.4rem;
+  cursor: pointer;
+  color: var(--blue);
+}
+
+header img {
+  cursor: pointer;
+  width: 10rem;
 }
 
 #container {
@@ -50,39 +79,68 @@ footer {
   background-color: var(--black);
   color: var(--white);
   width: 100%;
-  height: 30%;
+  min-height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 1rem;
   font-size: 1.2rem;
-  padding: 1rem 0;
+  padding: 6rem 0;
+  margin-top: 1rem;
 }
-footer h4.footerHead {
-  flex: 1;
-  font-size: 1.4rem;
+
+footer h3.footerHead {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
 }
+
 footer div.locationBlock {
   display: flex;
-  gap: 12rem;
-  width: 100%;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  width: 90%;
 }
-footer div.location {
+
+footer div.locationBlock div.location {
   display: flex;
-  align-items: flex-start;
-  gap: 2.4rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
 }
-footer div.location div p.city {
-  font-weight: 700;
+
+footer div.locationBlock div.location iframe {
+  border-radius: 12px;
+}
+
+div.address {
+  font-style: italic;
+}
+
+footer div.locationBlock div.location h5 {
+  font-size: 1rem;
   text-decoration: underline;
-  margin-bottom: 12px;
+  margin-bottom: 4px;
 }
-p.hours {
-  font-weight: 700;
-  margin-bottom: 12px;
+
+footer div.locationBlock div.location div.hours {
+  margin-top: 1rem;
 }
-footer div.location ul {
-  list-style-type: none;
+
+footer div.locationBlock div.location div.hours ul {
+  list-style: none;
+}
+footer div.locationBlock div.location div.hours ul li {
+  display: flex;
+  gap: 0.6rem;
+}
+
+footer div.locationBlock div.location div.hours ul li p:first-child {
+  font-weight: 600;
+}
+
+footer div.maps {
+  justify-content: space-around;
+  align-items: center;
+  display: flex;
+  width: 100%;
 }

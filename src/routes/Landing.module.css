@@ -1,0 +1,30 @@
+.heroSection {
+  background-image: url("../assets/hero.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80svh;
+}
+
+.mainHeader {
+  margin-block: 1rem;
+  font-size: 5rem;
+  text-align: center;
+  text-wrap: pretty;
+  color: var(--white);
+  width: 80%;
+}
+
+.subHeader {
+  text-transform: uppercase;
+  text-align: center;
+  text-wrap: balance;
+  font-size: 2rem;
+  color: var(--blue);
+}
